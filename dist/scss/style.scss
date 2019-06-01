@@ -1,0 +1,37 @@
+nav {
+    color: #fff;
+}
+
+#home-section {
+    color: #fff;
+
+    .home-bg {
+        background: url('../img/home.jpg') no-repeat;
+        background-size: cover;
+        padding: 2rem 0;
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+#dish-section {
+    padding: 5rem 0;
+
+    .row {
+        padding-top: 2rem;
+
+        img {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+#featured-section {
+
+    .carousel {
+        margin: 5rem 0;
+    }
+}
