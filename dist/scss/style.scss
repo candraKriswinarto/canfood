@@ -1,3 +1,15 @@
+$mobile: 800px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin ease {
+    transition: all .5s ease;
+}
+
 nav {
     color: #fff;
 }
@@ -33,5 +45,31 @@ nav {
 
     .carousel {
         margin: 5rem 0;
+    }
+}
+
+#chefs-section {
+
+    img {
+        @include mobile {
+            height: 400px;
+            margin: 0 auto;
+        }
+    }
+}
+
+#blog-section {
+    padding: 5rem 0;
+
+    .col-lg-3 {
+        cursor: pointer;
+
+        &:hover {
+            .card-title {
+                color: #FF0000;
+                @include ease;
+
+            }
+        }
     }
 }
