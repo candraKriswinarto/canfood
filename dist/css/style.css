@@ -44,7 +44,25 @@ nav {
 }
 #blog-section .col-lg-3:hover .card-title {
   color: #FF0000;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
+}
+
+#contact-section {
+  padding: 5rem 0;
+}
+#contact-section .map {
+  height: 400px;
+  width: 100%;
+}
+
+footer .row {
+  padding: 4rem 0;
+}
+footer span {
+  color: #C82333;
+}
+footer .icons fab {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

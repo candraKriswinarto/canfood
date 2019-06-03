@@ -6,8 +6,8 @@ $mobile: 800px;
     }
 }
 
-@mixin ease {
-    transition: all .5s ease;
+@mixin easeOut {
+    transition: all .5s ease-out;
 }
 
 nav {
@@ -67,9 +67,34 @@ nav {
         &:hover {
             .card-title {
                 color: #FF0000;
-                @include ease;
+                @include easeOut;
 
             }
         }
+    }
+}
+
+#contact-section {
+    padding: 5rem 0;
+
+    .map {
+        height: 400px;
+        width: 100%;
+    }
+}
+
+footer {
+
+    .row {
+        padding: 4rem 0;
+
+    }
+
+    span {
+        color: #C82333;
+    }
+
+    .icons fab {
+        cursor: pointer;
     }
 }
