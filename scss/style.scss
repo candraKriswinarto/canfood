@@ -1,0 +1,102 @@
+$mobile: 800px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin easeOut {
+    transition: all .5s ease-out;
+}
+
+.scrolled {
+    background: #fff !important;
+    color: red !important;
+}
+
+#home-section {
+    color: #fff;
+
+    .home-bg {
+        background: url('../img/home.jpg') no-repeat;
+        background-size: cover;
+        padding: 2rem 0;
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+}
+
+#dish-section {
+    padding: 5rem 0;
+
+    .row {
+        padding-top: 2rem;
+
+        img {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+#featured-section {
+
+    .carousel {
+        margin: 5rem 0;
+    }
+}
+
+#chefs-section {
+
+    img {
+        @include mobile {
+            height: 400px;
+            margin: 0 auto;
+        }
+    }
+}
+
+#blog-section {
+    padding: 5rem 0;
+
+    .col-lg-3 {
+        cursor: pointer;
+
+        &:hover {
+            .card-title {
+                color: #FF0000;
+                @include easeOut;
+
+            }
+        }
+    }
+}
+
+#contact-section {
+    padding: 5rem 0;
+
+    .map {
+        height: 400px;
+        width: 100%;
+    }
+}
+
+footer {
+
+    .row {
+        padding: 4rem 0;
+
+    }
+
+    span {
+        color: #C82333;
+    }
+
+    .icons fab {
+        cursor: pointer;
+    }
+}
