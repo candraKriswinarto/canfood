@@ -1,3 +1,4 @@
+
 // Google Map
 function initMap() {
     // Map options
@@ -14,3 +15,4 @@ function initMap() {
         position: {lat: 48.55, lng: -3.15}
     });
 }
+

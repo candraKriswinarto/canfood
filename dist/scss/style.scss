@@ -10,8 +10,9 @@ $mobile: 800px;
     transition: all .5s ease-out;
 }
 
-nav {
-    color: #fff;
+.scrolled {
+    background: #fff !important;
+    color: red !important;
 }
 
 #home-section {
@@ -25,6 +26,7 @@ nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
     }
 
 }

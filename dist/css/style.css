@@ -1,5 +1,6 @@
-nav {
-  color: #fff;
+.scrolled {
+  background: #fff !important;
+  color: red !important;
 }
 
 #home-section {
